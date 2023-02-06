@@ -22,3 +22,9 @@ jobs:
       - name: gcc build
         run: |
           ./build.sh
+
+      - name: update artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: hello
+          path: hello
